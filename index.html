@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Você</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<main class="experience" aria-labelledby="experience-title">
+<h1 id="experience-title" class="sr-only">Uma carta especial</h1>
+<div class="bg-layer base"></div>
+<div class="bg-layer texture"></div>
+<div class="bg-layer glow"></div>
+<div class="bg-layer memories" id="memories"></div>
+<p class="instruction" id="instruction">Clique no selo para abrir</p>
+<div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Abrir carta" aria-expanded="false">
+  <div class="envelope-inner">
+    <div class="envelope-back"></div>
+    <div class="envelope-front">
+      <div class="flap"></div>
+    </div>
+    <div class="seal initial-seal">
+      <span>♥</span>
+    </div>
+    <div class="letter" id="letter">
+      <div class="page page-flow active" aria-hidden="false">
+        <h2>Para alguém especial</h2>
+        <p>Hoje é o seu dia e queria aproveitar esse momento para te contar o quanto você se tornou importante para mim.</p>
+      </div>
+      <div class="page page-flow" aria-hidden="true">
+        <p>Gosto de como conversamos, de como posso ser eu mesmo com você, sem medo de ser julgado. Você é uma pessoa atenciosa, e a forma como cuida de mim me faz sentir valorizado.</p>
+      </div>
+      <div class="page page-flow" aria-hidden="true">
+        <p>Guardo até hoje o carinho de uma mensagem sua que me fez perceber o quanto eu importava para ti, e hoje quero demonstrar o quanto eu me importo contigo, mesmo que você já saiba.</p>
+      </div>
+      <div class="page page-flow" aria-hidden="true">
+        <p>Não precisamos transformar em uma grande declaração, gosto do jeito leve como estamos nos construindo. Só queria estar mais presente, rir e dividir a vida com você.</p>
+      </div>
+      <div class="page page-flow final" aria-hidden="true">
+        <p>Espero que seu dia seja cercado de pessoas que te façam sentir tão especial quanto você é para mim. Feliz aniversário meu bem.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="letter-controls" aria-label="Controles da carta">
+  <button type="button" class="letter-button" id="previousButton" aria-label="Voltar página" disabled>←</button>
+  <span class="page-indicator" id="pageIndicator" aria-live="polite">Página 1 de 5</span>
+  <button type="button" class="letter-button" id="nextButton" aria-label="Avançar página">→</button>
+</div>
+<div class="secret-message" id="secretMessage">
+  Obrigado por se tornar essa parte tão especial da minha vida.
+</div>
+</main>
+  <script src="script.js"></script>
+</body>
+
+</html>
